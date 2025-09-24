@@ -36,33 +36,65 @@ body {
     color: white;
 }
 
-/* Add a black background color to the top navigation */
+/* Navbar container */
 .topnav {
-  background-color: #333;
+  background-color: #f9f4f4;   /* light background */
   overflow: hidden;
+  display: flex;
+  justify-content: space-between; /* left menu + right login */
+  align-items: center;
+  padding: 4px 20px;            /* reduced padding -> thinner bar */
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
+  float: none;
+  color: #333333;
   text-align: center;
-  padding: 14px 16px;
+  padding: 6px 10px;            /* reduced padding -> less gap */
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;              /* slightly smaller font */
+  transition: background 0.2s ease;
+  margin: 0 4px;                /* reduces spacing between links */
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #e0ddd6; 
+  color: #333;
 }
 
-/* Add a color to the active/current link */
+/* Active link style */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #e9e6de;
+  color: #333333;
+  font-weight: 500;
+}
+
+/* Right side login */
+.topnav .login {
+  display: flex;
+  align-items: center;
+  gap: 6px;                     /* smaller gap between icon and text */
+  color: #1c2a3d;
+  font-weight: 500;
+  font-size: 14px;              /* smaller text */
+}
+
+/* Circular red login icon */
+.topnav .login-icon {
+  width: 22px;                  /* smaller size */
+  height: 22px;
+  background-color: #b71c1c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-}  
+  font-size: 12px;              /* icon size */
+}
+
+
 
 .header {
   padding: 60px;
